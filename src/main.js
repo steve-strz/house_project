@@ -2,6 +2,12 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
+import axios from "axios";
+import VueMomentLib from "vue-moment-lib";
+
+Vue.prototype.$axios = axios;
+
+Vue.use(VueMomentLib);
 
 Vue.config.productionTip = false;
 

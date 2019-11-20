@@ -4,8 +4,20 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
+  state: {
+    time: {
+      day: "",
+      hour: ""
+    }
+  },
+  mutations: {
+    updateHour(state, val) {
+      state.time.hour = val;
+    },
+    updateDay(state, val) {
+      state.time.day = val;
+    }
+  },
   actions: {},
   modules: {}
 });
